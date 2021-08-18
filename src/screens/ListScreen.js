@@ -13,7 +13,7 @@ const ListScreen = () => {
 
   return (
     <FlatList
-      keyExtractor={(_, index) => index}
+      keyExtractor={(_, index) => index.toString()}
       data={friends}
       renderItem={({ item }) => {
         return (
